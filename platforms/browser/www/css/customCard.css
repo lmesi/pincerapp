@@ -1,0 +1,69 @@
+.customCard,
+.customCard .card, 
+.customCard .card--material {
+    width: 60%;
+    border-radius: 5vw;
+    margin-right: 12vw;
+
+    flex: 0 0 auto;
+}
+
+.customCard img, 
+.customCard .card img, 
+.customCard .card--material img {
+    transform: scale(1.7);
+}
+
+.customCard .title {
+    font-family: 'Quicksand-Bold',sans-serif;
+    letter-spacing: -0.35vw;
+    color: #f0f0f0;
+}
+
+.customCard .card-preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 100%;
+}
+
+.card-red {
+    background: -moz-linear-gradient(45deg, rgba(220, 25, 60, 1) 0%, rgba(220, 25, 60, 0.63) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(220, 25, 60, 1) 0%, rgba(220, 25, 60, 0.63) 100%);
+    background: linear-gradient(45deg, rgba(220, 25, 60, 1) 0%, rgba(220, 25, 60, 0.63) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc193c', endColorstr='#a1dc193c', GradientType=1);
+    box-shadow: 0 4px 12px 0px #dc143cAA;
+
+    box-shadow: none !important;
+}
+
+.card-green {
+    background: -moz-linear-gradient(45deg, rgba(3,158,129,1) 0%, rgba(3,158,129,0.4) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(3,158,129,1) 0%,rgba(3,158,129,0.4) 100%);
+    background: linear-gradient(45deg, rgba(3,158,129,1) 0%,rgba(3,158,129,0.4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#039e81', endColorstr='#66039e81',GradientType=1 );
+    box-shadow: 0 4px 12px 0px #039E81AA;
+
+    box-shadow: none !important;
+}
+
+.card-blue {
+    background: -moz-linear-gradient(45deg, rgba(3,113,153,1) 0%, rgba(3,113,153,0.4) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(3,113,153,1) 0%,rgba(3,113,153,0.4) 100%);
+    background: linear-gradient(45deg, rgba(3,113,153,1) 0%,rgba(3,113,153,0.4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#037199', endColorstr='#66037199',GradientType=1 );
+    box-shadow: 0 4px 12px 0px #037199;
+
+    box-shadow: none !important;
+}
+
+.card-orange {
+    background: -moz-linear-gradient(45deg, rgba(247,146,4,1) 0%, rgba(247,146,4,0.4) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(247,146,4,1) 0%,rgba(247,146,4,0.4) 100%);
+    background: linear-gradient(45deg, rgba(247,146,4,1) 0%,rgba(247,146,4,0.4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f79204', endColorstr='#66f79204',GradientType=1 );
+    box-shadow: 0 4px 12px 0px #F79204;
+
+    box-shadow: none !important;
+}

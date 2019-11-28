@@ -1,0 +1,26 @@
+.list-header--material:not(:first-of-type) {
+    padding-top: 8px;
+}
+
+.list-item-socials {
+    padding-right: 16px !important;
+}
+
+.list-item-socials .list-item--material__center, 
+.list-item-socials .list-item--material__left:empty {
+    padding: 2vw 0 !important;
+}
+
+#homeButton {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+#homeButton ons-icon {
+    color: #2289ff !important;
+    font-size: 26px !important;
+}
+
+.text-logout {
+    color: #be0000;
+}

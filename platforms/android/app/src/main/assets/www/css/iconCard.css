@@ -1,0 +1,19 @@
+.iconCard {
+    box-shadow: 0 1px 10px rgba(0,0,0,.12);
+    margin-bottom: 6vw;
+}
+
+.iconCard .iconContainer {
+    border: 0px solid red;
+}
+
+.iconCard .title {
+    font-size: 4vw;
+    font-weight: bold;
+    margin-bottom: 1vw;
+}
+
+.iconCard .content p {
+    font-size: 2.9vw;
+    text-align: justify;
+}

@@ -1,0 +1,33 @@
+{
+    "name": "pincerapp",
+    "displayName": "PincérApp",
+    "version": "1.0.0",
+    "description": "A sample Apache Cordova application that responds to the deviceready event.",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Apache Cordova Team",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "cordova-android": "^7.1.4",
+        "cordova-browser": "^5.0.4",
+        "cordova-plugin-qrscanner": "^3.0.1",
+        "cordova-plugin-webpack": "^0.4.7",
+        "cordova-plugin-whitelist": "^1.3.4"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-whitelist": {},
+            "cordova-plugin-qrscanner": {},
+            "cordova-plugin-webpack": {}
+        },
+        "platforms": [
+            "android",
+            "browser"
+        ]
+    },
+    "devDependencies": {
+        "html-webpack-plugin": "^3.2.0"
+    }
+}

@@ -1,0 +1,52 @@
+
+.imageCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+    border-radius: 3vw;
+    margin-bottom: 4vw;
+}
+
+.imageCard .title {
+    font-size: 4vw;
+    font-weight: bold;
+    display: flex;
+    z-index: 1;
+    text-shadow: 1px 1px 10px #747474;
+}
+
+.imageCard .new-badge:before {
+    font-family: 'FontAwesome' !important;
+    content: '\f111';
+    font-size: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 1vw;
+    color: #41c9f2;
+}
+
+.imageCard .background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+    border-radius: 3vw;
+    z-index: 0;
+}
+
+.imageCard .content {
+    z-index: 1;
+}
+
+.imageCard .content p {
+    text-align: justify;
+    text-shadow: 1px 1px 10px #747474;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' * data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' * 'unsafe-inline'; media-src *; child-src * 'self' blob: http:; img-src 'self' * data: content:; script-src 'self' * http://xxxx 'unsafe-inline' 'unsafe-eval';">
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+    <!-- Frameworkök -->
+    <link rel="stylesheet" type="text/css" href="lib/onsenui/css/onsenui.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/onsenui/css/onsen-css-components.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/socialbuttons/bootstrap-social.css">
+    <link rel="stylesheet" type="text/css" href="lib/animate/css/animate.css">
+
+    <!-- Komponensek -->
+    <link rel="stylesheet" type="text/css" href="css/iconCard.css">
+    <link rel="stylesheet" type="text/css" href="css/imageCard.css">
+
+    <!-- Formázások -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/food.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/userpage.css">
+
+    <title>PincérApp</title>
+</head>
+
+<body>
+
+    <div class="camera">
+        <div class="container">
+            <ons-button id="closeCameraButton">
+                Kilépés
+            </ons-button>
+        </div>
+    </div>
+
+    <div class="app">
+        <ons-navigator swipeable id="onsNavigator" animation="slide" page="pages/home.html">
+
+            <!--
+                TOOLBAR
+            -->
+            <ons-toolbar>
+                <div class="left"></div>
+                <div class="center"></div>
+                <div class="right">
+                    <ons-toolbar-button id="openCameraButton">
+                        <ons-icon icon="ion-qr-scanner"></ons-icon>
+                    </ons-toolbar-button>
+
+                    <ons-toolbar-button id="openFavourites">
+                        <ons-icon icon="ion-heart"></ons-icon>
+                    </ons-toolbar-button>
+                </div>
+            </ons-toolbar>
+
+
+            <!--
+                HEADER
+            -->
+            <div class="container frame top-frame">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                        <h1 id="appTitle" class="title">PincérApp</h1>
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="col-xs-8 col-sm-8">
+                        <h2 id="pageTitle" class="title"></h1>
+                    </div>
+                    <div class="col-xs-4 col-sm-4">
+                        <img id="profileButton" class="userAvatar img-responsive" src="img/user.png">
+                    </div>
+                </div>
+        <!--
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                        <ons-search-input id="searchBar" placeholder="Keresés..."
+                            onchange="ons.notification.alert({ message: this.value, title: 'Keresés eredménye' })">
+                        </ons-search-input>
+                    </div>
+                </div>
+            -->
+            </div>
+        </ons-navigator>
+
+    </div>
+    <script type="text/javascript" src="lib/jquery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="lib/onsenui/js/onsenui.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/App.js"></script>
+    <script type="text/javascript" src="js/Onsen.js"></script>
+    <script type="text/javascript" src="js/Scanner.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="index.bundle.js"></script>
+</body>
+
+</html>

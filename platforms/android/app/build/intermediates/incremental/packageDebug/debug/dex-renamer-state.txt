@@ -1,0 +1,4 @@
+#Thu Nov 28 15:14:18 CET 2019
+base.0=C\:\\Users\\Teszt\\Desktop\\projektek\\cordova\\pincerapp\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

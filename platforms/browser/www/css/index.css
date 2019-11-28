@@ -1,0 +1,248 @@
+@font-face {
+    font-family: Modak;
+    src: url('../fonts/Modak-Regular.ttf');
+}
+
+@font-face {
+    font-family: Quicksand-Regular;
+    src: url('../fonts/Quicksand-Regular.otf');
+}
+
+@font-face {
+    font-family: Quicksand-Bold;
+    src: url('../fonts/Quicksand-Bold.otf');
+}
+
+@font-face {
+    font-family: Quicksand-Light;
+    src: url('../fonts/Quicksand-Light.otf');
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/***************************
+    BOOTSTRAP módosítások
+*/
+
+.row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    /*flex-wrap: wrap;*/
+}
+
+.row > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row-50 > div:nth-child(1),
+.row-40 > div:nth-child(1) {
+    padding-right: 0;
+}
+
+.row-50 > div:nth-child(2),
+.row-40 > div:nth-child(2) {
+    padding-left: 0;
+}
+
+.row-50 {
+    height: 50%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.row-40 {
+    height: 40%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.row-20 {
+    height: 20%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+
+/***************************
+    ONSEN UI módosítások 
+*/
+
+ons-navigator {
+    background-color: #e8ecf5 !important;
+    background-image: url('../img/pincerbg3.png');
+    background-size: 105% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+ons-toolbar {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+ons-toolbar .center {
+    font-family: 'Modak', sans-serif;
+    font-size: 6vw;
+    text-align: center;
+    color: #fefefe;
+}
+
+.page__background {
+    /*background-color: transparent !important;*/
+    background-color: #e8ecf5 !important;
+    background-image: url('../img/pincerbg3.png');
+    background-size: 105% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.tabbar, .tabbar--material {
+    background-color: #f8af63 !important;
+}
+
+.tabbar__button, .tabbar--material__button, ons-toolbar .right ons-toolbar-button {
+    color: #f0f0f0 !important;
+}
+
+ons-toolbar .left ons-toolbar-button {
+    color: #f8af63 !important;
+}
+
+.tabbar__border, .tabbar--material__border {
+    background-color: #fefefe;
+}
+
+:not(ons-toolbar-button):not(ons-action-sheet-button):not(.segment__button)>.ons-icon--ion {
+    line-height: 0vw;
+}
+
+.button, .button--material {
+    background-color: #2289ff !important;
+}
+
+.search-input--material {
+    border-radius: 15vw;
+}
+
+.list-header--material {
+    background-color: #f7f7f7 !important;
+}
+
+
+
+/***************************
+    APP FELÉPÍTÉSI VÁZA 
+*/
+
+.frame {
+    border: 0px solid red;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+
+.top-frame {
+    top: 0;
+    height: 25%;
+    max-height: 25%;
+    padding-top: 13vw;
+    overflow: hidden;
+}
+
+.top-frame > .row:nth-child(1) {
+    margin-top: 2vw;
+}
+
+.top-frame > .row:nth-child(2) {
+    margin-bottom: 3vw;
+}
+
+.inner-frame {
+    top: 25%;
+    height: 7%;
+
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8ecf5', endColorstr='#00e8ecf5',GradientType=0 );
+
+    z-index: 4 !important;
+}
+
+.middle-frame {
+    bottom: 0;
+    height: 75%;
+    max-height: 75%;
+    padding: 4vw 0;
+    overflow: scroll;
+}
+
+.bottom-frame {
+    bottom:0;
+    height: 40%;
+    max-height: 40%;
+    padding: 4vw 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.horizontal-scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    height: 46%;
+    padding: 2vw;
+
+}
+
+
+/***************************
+    CÍMSOROK
+*/
+
+h1.title, h2.title, h3.title, h4.title, h5.title, h6.title {
+    margin: 0;
+    text-transform: capitalize;
+}
+
+h1.title {
+    font-size: 10vw;
+    font-family: 'Modak', sans-serif !important;
+    letter-spacing: -0.5vw;
+}
+
+h2.title {
+    font-size: 8vw;
+}
+
+
+
+/***************************
+    HIDDEN CAMERA PAGE
+*/
+
+.camera {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.camera .container {
+    position: absolute;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    bottom: 5%;
+    width: 100%;
+}

@@ -1,0 +1,37 @@
+<ons-page id="login">
+    <div class="container frame middle-frame" style="padding: 4vw !important;">
+        <div class="container login-panel">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <ons-input id="username" modifier="underbar" placeholder="Felhasználónév" float></ons-input>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <ons-input id="password" modifier="underbar" type="password" placeholder="Jelszó" float></ons-input>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <ons-button id="loginButton">
+                        <ons-icon icon="ion-log-in" size="22">
+                            Bejelentkezés
+                        </ons-icon>
+                    </ons-button>
+                </div>
+            </div>
+            <!--
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 text-center">
+                    <span class="register-alert">Ha még nem rendelkezel fiókkal regisztrálj itt.</span>
+                </div>
+            </div>
+        -->
+        </div>
+    </div>
+
+    <ons-toast id="myToast" animation="ascend">
+        Ha még nem rendelkezel fiókkal <span class="text-register">regisztrálj itt.</span>
+        <button onclick="myToast.hide()">OK</button>
+    </ons-toast>
+</ons-page>

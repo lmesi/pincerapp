@@ -1,0 +1,12 @@
+
+.optionCard {
+    height: 100%;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.optionCard img {
+    max-width: 60%;
+    margin: 0 auto;
+}

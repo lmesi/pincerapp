@@ -1,0 +1,12 @@
+button.fab--material, ons-fab.fab--material, ons-speed-dial-item.fab--material {
+    background-color: #2289ff;
+    color: #f0f0f0;
+}
+
+.cover {
+    margin: 2vw auto;
+}
+
+.details {
+    text-align: justify;
+}
