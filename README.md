@@ -1,7 +1,9 @@
 # pincerapp
 
 ###### Futtatás:
-cordova run <platform>
+cordova run platform
+
+(Jelenleg **android** és **browser** platformok vannak hozzáadva a projekthez)
 
 ###### Futtatás (Live-reload):
 cordova run browser -- --livereload
